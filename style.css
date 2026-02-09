@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+h1#title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+p#description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+button#btnClick {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button#btnClick:hover {
+    background-color: #2980b9;
+}
+
+button#btnClick:active {
+    transform: scale(0.98); 
+}
+
+
+#output {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    text-align: center;
+    border-left: 5px solid #3498db;
+}
+
+
+#output h2 {
+    font-size: 1.2rem;
+    color: #27ae60; 
+    margin-bottom: 10px;
+}
+
+#output p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #444;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+
+#output p:last-child {
+    border-bottom: 2px solid #eee;
+}
